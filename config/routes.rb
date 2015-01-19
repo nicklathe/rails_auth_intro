@@ -13,6 +13,11 @@ Rails.application.routes.draw do
   get "logout" => "sessions#destroy"
   post "logout" => "sessions#destroy"
 
+  get 'reset' => 'passwords#new'
+  post 'reset' => 'passwords#create'
+
+  get 'reset' =>
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
